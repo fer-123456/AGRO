@@ -38,7 +38,7 @@
 <div class="container">
   <br>
       <div class="form-group">
-        <label class="COMUNES1textobienvenida1" for=""><b>Para vender necesita una cuenta</b></label><br>
+        <label class="COMUNES1textobienvenida1" for=""><b>Para transportar necesita una cuenta</b></label><br>
         <label class="COMUNES1textobienvenida2" for="">Recuerde que el número de celular y la clave personal tendrá que escribirlas cada vez
         que quiera ingresar por eso elija unas que pueda <b>recordar fácilmente</b></label>
       </div>
@@ -53,12 +53,12 @@
  <div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-          <input class="form-control" type="text" name=nombre placeholder="Nombre">
+          <input class="form-control" type="text" name="nombre" placeholder="Nombre">
         </div>
       </div>
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="text" name=apellido placeholder="Apellido">
+      <input class="form-control" type="text" name="apellido" placeholder="Apellido">
       </div>
     </div>
 </div>
@@ -68,12 +68,12 @@
   <div class="row">
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control"  type="text" name=numerocelular placeholder="Número celular">
+       <input class="form-control"  type="text" name="numcel" placeholder="Número celular">
      </div>
      </div>
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control" type="text" name=nombrefinda placeholder="Nombre de la FInca">
+       <input class="form-control" type="text" name="nom" placeholder="Nombre de la FInca">
      </div>
      </div>
   </div>

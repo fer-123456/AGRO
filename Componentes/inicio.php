@@ -1,8 +1,3 @@
-<?php
-session_start();
-$usuario=$_SESSION['username'];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,6 +41,7 @@ $usuario=$_SESSION['username'];
                         <li class="nav-item">
                           <a class="nav-link" href="#">Ayuda</a>
                         </li>
+                        
                         <li class="nav-item">
                           <a class="nav-link" href="#">Ingresar</a>
                         </li>
@@ -59,8 +55,6 @@ $usuario=$_SESSION['username'];
                       <a href="contacto.html">Vender</a>
                       <a href="contacto.html">Ayuda</a>
                       <a href="contacto.html">Ingresar</a>
-                      <a href="" style="float:right;" ><?php echo "<h2>! hola $usuario ¡</h2>"; ?> </a><br><br>
-                      <a href="destroysesion.php" style="float:right;" >Cerrar sesion</a>
                       <button class="ESTILOS1botones2" role="link" href="index1.html">Crear</button>
           </div>
         </div>

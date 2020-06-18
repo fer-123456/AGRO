@@ -18,13 +18,13 @@ $filas=mysqli_num_rows($existe);
 if ($filas > 0){
 
   $_SESSION['username'] = $login1;
-  header('Location: inicio.php');
+  header('Location: inicio2.php');
   
                 }
                   else{
                     echo'<script type="text/javascript">
                     alert("Usuario y/o Contraseña erroneos");
-                    window.location.href="ingreso.php";
+                    window.location.href="C_Login_productor2.php";
 
                     </script>';
                     
