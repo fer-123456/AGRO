@@ -54,7 +54,7 @@
     <!--  Formulario ------------col-12 col-xs-12 col-sm-12 col-lg-12-------------------------------->
 
 <br>
-<form class="" action="ingresarindex.php" method="post">
+<form class="" action="Componentes/ingresarindex.php" method="post">
   <div class="container">
 
           <div class="row">
