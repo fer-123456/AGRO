@@ -54,11 +54,7 @@
     <!--  Formulario ------------col-12 col-xs-12 col-sm-12 col-lg-12-------------------------------->
 
 <br>
-
-<form class="" action="index.html" method="post">
-
-<form class="" action="Componentes/ingresarindex.php" method="post">
-
+<form class="" action="ingresarindex.php" method="post">
   <div class="container">
 
           <div class="row">
@@ -66,11 +62,7 @@
             </div>
             <div class="col-4">
               <div class="ESTILOS1lineabajacampotexto">
-
-                <input class="form-control" type="text" name=telefono placeholder="Numero de Telefono">
-
                 <input class="form-control" type="text" name="login" placeholder="Numero de Telefono">
-
               </div>
             </div>
             <div class="col-4">
@@ -82,9 +74,7 @@
             </div>
             <div class="col-4">
               <div class="ESTILOS1lineabajacampotexto">
-
                 <input class="form-control"  type="password" name="password" placeholder="Contraseña">
-
               </div>
             </div>
             <div class="col-4">
@@ -97,9 +87,7 @@
   <div class="container">
             <div class="row">
                 <div class="col">
-
                 <button type="submit" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
-
               </div>
         </div>
   </div>

@@ -47,18 +47,18 @@
     <!--  Formulario ------------col-12 col-xs-12 col-sm-12 col-lg-12-------------------------------->
 
 <br>
-<form class="" action="index.html" method="post">
+<form class="" action="Componentes/p_registro_pro.php" method="post">
   <div class="container">
 
  <div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-          <input class="form-control" type="text" name=nombre placeholder="Nombre">
+          <input class="form-control" type="text" name="nombre" placeholder="Nombre">
         </div>
       </div>
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="text" name=apellido placeholder="Apellido">
+      <input class="form-control" type="text" name="apellido" placeholder="Apellido">
       </div>
     </div>
 </div>
@@ -68,12 +68,12 @@
   <div class="row">
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control"  type="text" name=numerocelular placeholder="Número celular">
+       <input class="form-control"  type="text" name="numcelular" placeholder="Número celular">
      </div>
      </div>
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control" type="text" name=nombrefinda placeholder="Nombre de la FInca">
+       <input class="form-control" type="text" name="nombrefinca" placeholder="Nombre de la FInca">
      </div>
      </div>
   </div>
@@ -81,12 +81,12 @@
   <div class="row">
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control"  type="password" name=clave placeholder="Clave">
+      <input class="form-control"  type="text" name="cedula" placeholder="Numero de cedula">
     </div>
     </div>
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="password" name=confirmacion placeholder="Confirme la clave">
+      <input class="form-control" type="password" name="password" placeholder="Contraseña">
     </div>
       </div>
   </div>
@@ -94,17 +94,42 @@
   <div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-          <select class="form-control" name="departamento" placeholder>
-            <option disabled selected>Departamento</option>
-            <option>Risaralda</option>
-        </select>
+        <select  class="form-control" name="departamento">
+         <?php 
+
+         include("conexion.php");
+         $con=conectar();
+
+         $consulta="SELECT * FROM `p_departamentos`";
+         $ejecutar=mysqli_query( $con,$consulta );
+
+?>
+<option >Selecion Departamento</option>
+<?php foreach ($ejecutar as $opciones):?>
+   
+      <option value="<?php echo $opciones['departamento']  ?>"><?php echo $opciones['departamento'] ?></option>
+         <?php endforeach ?>
+</select>
+</select>
       </div>
       </div>
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="ciudad" placeholder>
-          <option disabled selected>Ciudad</option>
-          <option>Pereira</option>
+        
+         <?php 
+
+         $consulta="SELECT * FROM `p_ciudades`";
+         $ejecutar=mysqli_query( $con,$consulta );
+
+?>
+<option >Selecion Ciudad</option>
+<?php foreach ($ejecutar as $opciones):?>
+   
+      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
+         <?php endforeach ?>
+</select>
+
         </select>
       </div>
       </div>
@@ -114,16 +139,38 @@
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="municipio" placeholder>
-          <option disabled selected>Municipio</option>
-          <option>Dosquebradas</option>
+       
+         <?php
+         $consulta="SELECT * FROM `p_ciudades`";
+         $ejecutar=mysqli_query( $con,$consulta );
+
+?>
+<option >Selecion Municipio</option>
+<?php foreach ($ejecutar as $opciones):?>
+   
+      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
+         <?php endforeach ?>
+</select>
         </select>
       </div>
       </div>
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="vereda" placeholder>
-          <option disabled selected>Vereda</option>
-          <option>Naranjales</option>
+
+           <?php 
+
+         $consulta="SELECT * FROM `p_veredas`";
+         $ejecutar=mysqli_query( $con,$consulta );
+
+?>
+<option >Selecione Vereda</option>
+<?php foreach ($ejecutar as $opciones):?>
+   
+      <option value="<?php echo $opciones['vereda']  ?>"><?php echo $opciones['vereda'] ?></option>
+         <?php endforeach ?>
+</select>
+          
         </select>
       </div>
       </div>
@@ -147,7 +194,7 @@
               
           </div>
           <div class="col-xs-3 col-sm-2">
-              <button type="button" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
+              <button type="submit" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
           </div>
     </div>
   </div>
