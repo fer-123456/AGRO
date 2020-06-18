@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AGRO-RISARALDA/Estilos/Estilos.css">
 
-    <title>Crear Cuenta Productor</title>
+    <title>Registro Productor </title>
 
   </head>
   <body>
@@ -36,96 +36,111 @@
 </div>
 
 <div class="container">
-  <div class="row">
-      <div class="col-3">
+  <br>
+      <div class="form-group">
+        <label class="COMUNES1textobienvenida2" for="">Para publicar el producto necesitamos algunos datos<b></b></label>
       </div>
-            <div class="col-6">
-            <div class="form-group">
-            <label class="COMUNES1textobienvenida4" for=""><b>¡Hola!</b></label><br>
-            <label class="COMUNES1textobienvenida5" for="">Recuerde que para ofrecer su producto debe entrar a su cuenta con su número de teléfono y su clave personal</label>
-            </div>
-            </div>
-      <div class="col-3">
-      </div>
-  </div>
 </div>
-
 
     <!--  Formulario ------------col-12 col-xs-12 col-sm-12 col-lg-12-------------------------------->
 
-<br>
+    <div id="rectangle">
+    
+    <div id="circulo"><h3 id="hp">Producto</h3></div> 
+      <div id="circulo1"><h3 id="hc">Caracateristica</h3></div>  
+       <div id="circulo2"><h3 id="hu">Ubicacion</h3></div>
 
-<form class="" action="index.html" method="post">
+    
 
-<form class="" action="Componentes/ingresarindex.php" method="post">
 
-  <div class="container">
-
-          <div class="row">
-            <div class="col-4">
-            </div>
-            <div class="col-4">
-              <div class="ESTILOS1lineabajacampotexto">
-
-                <input class="form-control" type="text" name=telefono placeholder="Numero de Telefono">
-
-                <input class="form-control" type="text" name="login" placeholder="Numero de Telefono">
-
-              </div>
-            </div>
-            <div class="col-4">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-4">
-            </div>
-            <div class="col-4">
-              <div class="ESTILOS1lineabajacampotexto">
-
-                <input class="form-control"  type="password" name="password" placeholder="Contraseña">
-
-              </div>
-            </div>
-            <div class="col-4">
-            </div>
-          </div>
-</div>
-
-        <br>
-
-  <div class="container">
-            <div class="row">
-                <div class="col">
-
-                <button type="submit" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
-
-              </div>
-        </div>
-  </div>
-</form>
-
-<br>
-
-<div class="container">
-  <div class="row">
-        <div class="col-3">
-        </div>
-        <div class="col-3">
-          <div class="ESTILOS1centrado">
-            <a class="COMUNES1links1" href="?menu=P_Registro_Productor">Crear Cuenta</a>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="ESTILOS1centrado">
-            <a class="COMUNES1links2" href="#">Olvide mi contraseña</a>
-          </div>
-        </div>
-        <div class="col-3">
-        </div>
+    
     </div>
-</div>
 
+
+    <style>
+
+    .hu{
+        position:relative;
+  
+   top:5px;
+   height:20px;
+   width:72px;  
+   background:#;
+
+
+    }
+
+    .hc{
+    position:relative;
+   top:5px;
+   height:20px;
+   width:72px;  
+   left:18px;
+   background:#;
+    }
+
+    #hp{
+    position:relative;
+   top:5px;
+   height:20px;
+   width:72px;  
+   left:45px;
+   background:#;
+
+    }
+
+#rectangle{
+top: 117px;
+left: 0px;
+width: 1366px;
+height: 88px;
+background: #F9F9F8 0% 0% no-repeat padding-box;
+opacity: 1;}
+
+
+#circulo{
+
+   position:relative;
+   top:21px;
+   height:45px;
+   width:45px;  
+   left:363px;
+   background:#;
+   -moz-border-radius:50px;
+   -webkit-border-radius:50px;
+   border:3px solid #84B315;
+   
+}
+
+#circulo1{
+
+position:relative;
+top:-25px;
+height:45px;
+width:45px;  
+left:595px;
+background:#;
+-moz-border-radius:50px;
+-webkit-border-radius:50px;
+border:3px solid #84B315;
+
+}
+
+#circulo2{
+
+position:relative;
+top:-69px;
+height:45px;
+width:45px;  
+left:868px;
+background:#;
+-moz-border-radius:50px;
+-webkit-border-radius:50px;
+border:3px solid #84B315;
+
+}
+
+    </style>
 
 <!-- footer -------------------------------------------->
 
