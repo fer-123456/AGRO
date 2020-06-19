@@ -30,8 +30,8 @@
 		case 'home':
 			require_once('Componentes/home.php');
 			break;
-		case 'regproductor':
-			require_once('Componentes/regproductor.php');
+		case 'regproducto':
+			require_once('Componentes/regproducto.php');
 			break;
 		case 'regtransportista':
 			require_once('Componentes/regtransportista.php');
@@ -39,6 +39,10 @@
 		case 'regcomprador':
 			require_once('Componentes/regcomprador.php');
 			break;
+			case 'formulario_producto':
+				require_once('Componentes/formulario_producto.php');
+				break;
+			
 			case 'C_Login_transportista':
 				require_once('Componentes/C_Login_transportista.php');
 				break;
@@ -76,5 +80,9 @@
 										case 'P_Registro_Comprador':
 											require_once('Componentes/P_Registro_Comprador.php');
 											break;
+											case 'formulario2_producto':
+												require_once('Componentes/formulario2_producto.php');
+												break;
+											
 	}
  ?>

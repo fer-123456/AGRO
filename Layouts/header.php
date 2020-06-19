@@ -11,11 +11,13 @@
 					<a href="?menu=inicio">Inicio</a>
 				</li>
 				<li>
-					<a href="?menu=regproductor">Registrar Productor</a>
+					<a href="?menu=regproducto">Registrar Productor</a>
 				</li> 
 				<li>
 					<a href="?menu=regcomprador">Registrar Comprador</a>
 				</li> 
+				
+				
 				<li>
 					<a href="?menu=regtransportista">Registrar Transportista</a>
         		</li>   
