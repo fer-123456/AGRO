@@ -89,7 +89,7 @@
           <button type="button" class="ESTILOS1botones2" name="vender" id="boton_Productor">VENDER</button>
 		  <script type="text/javascript">
             document.getElementById("boton_Productor").onclick = function () {
-            location.href = "?menu=P_Productor_saludo";
+            location.href = "P_Productor_saludo.php";
             };
          </script>
         </div>
@@ -99,7 +99,7 @@
           <button type="button" class="ESTILOS1botones2" name="transportar" id="boton_Transportador">TRANSPORTAR</button>
           <script type="text/javascript">
             document.getElementById("boton_Transportador").onclick = function () {
-            location.href = "?menu=T_Transportador_saludo";
+            location.href = "T_Transportador_saludo.php";
             };
          </script>
         </div>
@@ -109,7 +109,7 @@
           <button type="button" class="ESTILOS1botones2" name="comprar"id="boton_Comprador">COMPRAR</button>
           <script type="text/javascript">
             document.getElementById("boton_Comprador").onclick = function () {
-            location.href = "?menu=C_Comprador_saludo";
+            location.href = "C_Comprador_saludo.php";
             };
          </script>
         </div>
@@ -136,7 +136,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Aguacate</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -147,7 +147,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Tomate</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -158,7 +158,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Banano</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -182,7 +182,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Cebolla</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -193,7 +193,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Lulo</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -215,7 +215,7 @@
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Fresa</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>

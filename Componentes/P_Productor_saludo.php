@@ -53,7 +53,7 @@
               <button type="button" class="ESTILOS2botones9" name="yatengocuenta"id="boton_login_productor">YA TENGO CUENTA</button>
               <script type="text/javascript">
             document.getElementById("boton_login_productor").onclick = function () {
-            location.href = "?menu=C_Login_productor";
+            location.href = "C_Login_productor.php";
             };
          </script>
           </div>
@@ -61,7 +61,7 @@
               <button type="button" class="ESTILOS2botones10" name="quierocrearcuenta"id="registro_productor">QUIERO CREAR UNA CUENTA Y COMENZAR</button>
               <script type="text/javascript">
             document.getElementById("registro_productor").onclick = function () {
-            location.href = "?menu=P_Registro_Productor";
+            location.href = "P_Registro_Productor.php";
             };
             </script>
           </div>

@@ -2,7 +2,7 @@
 	/**
 	* Archivo que redirecciona al contenido que se va incrustar dentro de la header y el footer
 	**/
-	switch ($_GET['menu']) {
+	/**switch ($_GET['menu']) {
 		case 'ingreso':
 			require_once('Componentes/ingreso.php');
 			break;

@@ -119,7 +119,7 @@
                <button type="button" class="ESTILOS1botones" name="cancelar"id="cancelar_productor">CANCELAR</button>
                <script type="text/javascript">
                  document.getElementById("cancelar_productor").onclick = function () {
-                 location.href = "?menu=inicio";
+                 location.href = "inicio.php";
                  };
                </script>
               
@@ -128,7 +128,7 @@
                <button type="submit" class="ESTILOS1botones" name="continuar"id="insertar">CONTINUAR</button>
                <script type="text/javascript">
                  document.getElementById("insertar").onclick = function () {
-                 location.href = "?menu=formulario_producto";
+                 location.href = "formulario_producto.php";
                  };
                </script>
             </div>

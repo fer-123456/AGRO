@@ -111,7 +111,7 @@
         </div>
         <div class="col-3">
           <div class="ESTILOS1centrado">
-            <a class="COMUNES1links1" href="?menu=P_Registro_Productor">Crear Cuenta</a>
+            <a class="COMUNES1links1" href="P_Registro_Productor.php">Crear Cuenta</a>
           </div>
         </div>
         <div class="col-3">

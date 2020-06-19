@@ -123,7 +123,7 @@
               <button type="button" class="ESTILOS1botones" name="cancelar"id="cancelar_comprador">CANCELAR</button>
               <script type="text/javascript">
             document.getElementById("cancelar_comprador").onclick = function () {
-            location.href = "?menu=inicio";
+            location.href = "inicio.php";
             };
             </script>
           </div>
