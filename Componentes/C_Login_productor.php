@@ -55,7 +55,6 @@
 
 <br>
 
-<form class="" action="index.html" method="post">
 
 <form class="" action="Componentes/ingresarindex.php" method="post">
 
@@ -67,7 +66,6 @@
             <div class="col-4">
               <div class="ESTILOS1lineabajacampotexto">
 
-              
 
                 <input class="form-control" type="text" name="login" placeholder="Numero de Telefono">
 

@@ -78,12 +78,12 @@
   <div class="row">
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control"  type="text" name="password" placeholder="Contraseña">
+      <input class="form-control"  type="password" name="password" placeholder="Contraseña">
     </div>
     </div>
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="password" name="conpassword" placeholder="Cofirmar Contraseña">
+      <input class="form-control" type="password" name="conpassword" placeholder="Confirmar Contraseña">
       
     </div>
       </div>
@@ -123,10 +123,14 @@
          $ejecutar=mysqli_query( $con,$consulta );
 
 ?>
-<option >Selecion Ciudad</option>
+<option >Selecione Ciudad</option>
 <?php foreach ($ejecutar as $opciones):?>
    
-      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
+      <option value="<?php echo $opciones['ciudad']," -- " , $opciones['id_ciudad']?>"> <?php echo $opciones['ciudad'] , $opciones['id_ciudad'] ?></option>
+      
+      
+
+
          <?php endforeach ?>
 </select>
 
@@ -143,7 +147,7 @@
         </select>
       </div>
       </div>
-      
+
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="vereda" placeholder>
@@ -157,7 +161,7 @@
 <option >Selecione Vereda</option>
 <?php foreach ($ejecutar as $opciones):?>
    
-      <option value="<?php echo $opciones['vereda']  ?>"><?php echo $opciones['vereda'] ?></option>
+      <option value="<?php echo $opciones['vereda'] ,  $opciones['id_vereda'] ?>"><?php echo $opciones['vereda'] , $opciones['id_vereda'] ?></option>
          <?php endforeach ?>
 </select>
           
