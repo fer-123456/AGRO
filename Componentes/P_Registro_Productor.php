@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,22 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/AGRO-RISARALDA/Estilos/Estilos.css">
+    <link rel="stylesheet" type="text/css" href="/AGRO/Estilos/Estilos.css">
 
-    <title>Registro Productor </title>
+    <title>Registro Productor</title>
 
   </head>
   <body>
 
-
     <!--  header ---------------------------------------------------------------------->
-
 
 <div class="container">
   <br>
   <div class="row-12">
     <div class="">
-      <img src="\AGRO-RISARALDA\imagenes\ENCABEZADOLogo.png" alt="De mi tierrita">
+      <img src="\AGRO\imagenes\ENCABEZADOLogo.png" alt="De mi tierrita">
     </div>
   </div>
 </div>
@@ -73,7 +70,7 @@
      </div>
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control" type="text" name="nombrefinca" placeholder="Nombre de la FInca">
+       <input class="form-control" type="text" name="cedula" placeholder="Numero de cedula">
      </div>
      </div>
   </div>
@@ -81,17 +78,20 @@
   <div class="row">
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control"  type="text" name="cedula" placeholder="Numero de cedula">
+      <input class="form-control"  type="text" name="password" placeholder="Contraseña">
     </div>
     </div>
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="password" name="password" placeholder="Contraseña">
+      <input class="form-control" type="password" name="conpassword" placeholder="Cofirmar Contraseña">
+      
     </div>
       </div>
   </div>
   <br>
-  <div class="row">
+
+  
+<div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select  class="form-control" name="departamento">
@@ -138,22 +138,12 @@
   <div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-        <select class="form-control" name="municipio" placeholder>
-       
-         <?php
-         $consulta="SELECT * FROM `p_ciudades`";
-         $ejecutar=mysqli_query( $con,$consulta );
+        <input class="form-control" type="text" name="nomfinca" placeholder="Nombre de la finca">
 
-?>
-<option >Selecion Municipio</option>
-<?php foreach ($ejecutar as $opciones):?>
-   
-      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
-         <?php endforeach ?>
-</select>
         </select>
       </div>
       </div>
+      
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="vereda" placeholder>
@@ -177,7 +167,6 @@
   </div>
 </div>
 
-
 <br>
   <div class="container">
     <div class="row">
@@ -195,6 +184,11 @@
           </div>
           <div class="col-xs-3 col-sm-2">
               <button type="submit" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
+              <script type="text/javascript">
+            document.getElementById("continuar").onclick = function () {
+            location.href = "?menu=formulario_producto";
+            };
+            </script>
           </div>
     </div>
   </div>
@@ -214,18 +208,17 @@
   <div class="row">
         <div class="col-6">
           <div class="COMUNES1llamenos">
-            <img src="\PRUEBAS\imagenes\FOOTERcontactotelefono.jpg" alt="Llame al 318 7076267"><label for="">Llame al 310 246 5678    ó &nbsp</label>
+            <img src="\AGRO\imagenes\FOOTERcontactotelefono.jpg" alt="Llame al 318 7076267"><label for="">Llame al 310 246 5678    ó &nbsp</label>
           </div>
         </div>
         <div class="col-6">
           <div class="COMUNES1escribanos">
-        <a href="https://api.whatsapp.com/send?phone=3187076267&text=Bienvenido%20al%20soporte%20De%20Mi%20Tierrita.%20En%20que%20podemos%20ayudarte?" target="_blank" class="COMUNES1escribanos"><label for=""><u>Escríbanos para responderle</u></label><img src="\PRUEBAS\imagenes\FOOTERcontactochat.jpg" alt="Escríbanos para responderle">
+        <a href="https://api.whatsapp.com/send?phone=3187076267&text=Bienvenido%20al%20soporte%20De%20Mi%20Tierrita.%20En%20que%20podemos%20ayudarte?" target="_blank" class="COMUNES1escribanos"><label for=""><u>Escríbanos para responderle</u></label><img src="\AGRO\imagenes\FOOTERcontactochat.jpg" alt="Escríbanos para responderle">
         </div>
         </div>
     </div>
   </div>
 </div>
-
 
 <br><br>
 

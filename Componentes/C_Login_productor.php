@@ -42,7 +42,7 @@
             <div class="col-6">
             <div class="form-group">
             <label class="COMUNES1textobienvenida4" for=""><b>¡Hola!</b></label><br>
-            <label class="COMUNES1textobienvenida5" for="">Recuerde que para ofrecer su producto debe entrar a su cuenta con su número de teléfono y su clave personal</label>
+            <label class="COMUNES1textobienvenida5" for="">Recuerde que para ofrecer sus servicios debe entrar a su cuenta con su número de teléfono y su clave personal</label>
             </div>
             </div>
       <div class="col-3">
@@ -67,7 +67,7 @@
             <div class="col-4">
               <div class="ESTILOS1lineabajacampotexto">
 
-                <input class="form-control" type="text" name=telefono placeholder="Numero de Telefono">
+              
 
                 <input class="form-control" type="text" name="login" placeholder="Numero de Telefono">
 

@@ -50,10 +50,10 @@
   <div class="container">
     <div class="row">
           <div class="col-xs-2 col-sm-6 col-md-6" >
-              <button type="button" class="ESTILOS2botones7" name="yatengocuenta"id="boton_login_transportista">YA TENGO CUENTA</button>
+          <button type="button" class="ESTILOS2botones9" name="yatengocuenta"id="boton_login_productor">YA TENGO CUENTA</button>
               <script type="text/javascript">
-            document.getElementById("boton_login_transportista").onclick = function () {
-            location.href = "?menu=C_Login_transportista";
+            document.getElementById("boton_login_productor").onclick = function () {
+            location.href = "?menu=C_Login_productor";
             };
          </script>
           </div>
