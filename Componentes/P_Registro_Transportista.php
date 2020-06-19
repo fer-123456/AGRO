@@ -140,15 +140,16 @@
               <label for=""></label>
           </div>
           <div class="col-xs-3 col-sm-2">
-              <button type="button" class="ESTILOS1botones" name="cancelar_transportista"id ="cancelar_transportista">CANCELAR</button>
+              <button type="button" class="ESTILOS1botones" name="cancelar"id="cancelar_productor">CANCELAR</button>
               <script type="text/javascript">
-            document.getElementById("cancelar_transportista").onclick = function () {
+            document.getElementById("cancelar_productor").onclick = function () {
             location.href = "?menu=inicio";
             };
             </script>
+              
           </div>
           <div class="col-xs-3 col-sm-2">
-              <button type="button" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
+              <button type="submit" class="ESTILOS1botones" name="continuar">CONTINUAR</button>
           </div>
     </div>
   </div>

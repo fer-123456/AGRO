@@ -83,6 +83,9 @@
 											case 'formulario2_producto':
 												require_once('Componentes/formulario2_producto.php');
 												break;
+												case 'Confirmacion_producto':
+													require_once('Componentes/Confirmacion_producto.php');
+													break;
 											
 	}
  ?>
