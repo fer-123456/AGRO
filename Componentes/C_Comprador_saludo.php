@@ -50,10 +50,10 @@
   <div class="container">
     <div class="row">
           <div class="col-xs-2 col-sm-6 col-md-6" >
-              <button type="button" class="ESTILOS2botones3" name="yatengocuenta" id="boton_login_comprador">YA TENGO CUENTA</button>
+          <button type="button" class="ESTILOS2botones9" name="yatengocuenta"id="boton_login_productor">YA TENGO CUENTA</button>
               <script type="text/javascript">
-            document.getElementById("boton_login_comprador").onclick = function () {
-            location.href = "?menu=C_Login_comprador";
+            document.getElementById("boton_login_productor").onclick = function () {
+            location.href = "C_Login_productor.php";
             };
          </script>
             
@@ -62,7 +62,7 @@
               <button type="button" class="ESTILOS2botones4" name="quierocrearcuenta"id="registro_comprador">QUIERO CREAR UNA CUENTA Y COMENZAR</button>
               <script type="text/javascript">
             document.getElementById("registro_comprador").onclick = function () {
-            location.href = "?menu=P_Registro_Comprador";
+            location.href = "P_Registro_Comprador.php";
             };
          </script>
           </div>

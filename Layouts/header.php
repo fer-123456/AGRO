@@ -8,14 +8,16 @@
 		</div>
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="?menu=inicio">Inicio</a>
+					<a href="Componentes/inicio.php">Inicio</a>
 				</li>
 				<li>
-					<a href="?menu=regproductor">Registrar Productor</a>
+					<a href="?menu=regproducto">Registrar Productor</a>
 				</li> 
 				<li>
 					<a href="?menu=regcomprador">Registrar Comprador</a>
 				</li> 
+				
+				
 				<li>
 					<a href="?menu=regtransportista">Registrar Transportista</a>
         		</li>   

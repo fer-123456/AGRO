@@ -48,86 +48,68 @@
 
 <br>
 <form class="" action="index.html" method="post">
-  <div class="container">
+<div class="container">
 
- <div class="row">
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-          <input class="form-control" type="text" name=nombre placeholder="Nombre">
-        </div>
-      </div>
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="text" name=apellido placeholder="Apellido">
-      </div>
-    </div>
+<div class="row">
+     <div class="col-xs-4 col-sm-6">
+       <div class="ESTILOS1lineabajacampotexto">
+         <input class="form-control" type="text" name=nombre placeholder="Nombre">
+       </div>
+     </div>
+     <div class="col-xs-4 col-sm-6">
+       <div class="ESTILOS1lineabajacampotexto">
+     <input class="form-control" type="text" name=apellido placeholder="Apellido">
+     </div>
+   </div>
 </div>
 
-  <br>
+ <br>
 
-  <div class="row">
-     <div class="col-xs-4 col-sm-6">
-       <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control"  type="text" name=numerocelular placeholder="Número celular">
-     </div>
-     </div>
-     <div class="col-xs-4 col-sm-6">
-       <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control" type="text" name=nombrefinda placeholder="Nombre de la FInca">
-     </div>
-     </div>
-  </div>
-  <br>
-  <div class="row">
+ <div class="row">
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control"  type="password" name=clave placeholder="Clave">
+      <input class="form-control"  type="text" name=numerocelular placeholder="Número celular">
     </div>
     </div>
     <div class="col-xs-4 col-sm-6">
-      <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="password" name=confirmacion placeholder="Confirme la clave">
-    </div>
-      </div>
-  </div>
-  <br>
-  <div class="row">
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-          <select class="form-control" name="departamento" placeholder>
-            <option disabled selected>Departamento</option>
-            <option>Risaralda</option>
-        </select>
-      </div>
-      </div>
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-        <select class="form-control" name="ciudad" placeholder>
-          <option disabled selected>Ciudad</option>
-          <option>Pereira</option>
-        </select>
-      </div>
-      </div>
-  </div>
-  <br>
-  <div class="row">
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-        <select class="form-control" name="municipio" placeholder>
-          <option disabled selected>Municipio</option>
-          <option>Dosquebradas</option>
-        </select>
-      </div>
-      </div>
-      <div class="col-xs-4 col-sm-6">
-        <div class="ESTILOS1lineabajacampotexto">
-        <select class="form-control" name="vereda" placeholder>
-          <option disabled selected>Vereda</option>
-          <option>Naranjales</option>
-        </select>
-      </div>
-      </div>
-  </div>
+     <div class="ESTILOS1lineabajacampotexto">
+     <input class="form-control"  type="password" name=clave placeholder="Clave">
+   </div>
+   </div>
+ </div>
+ <br>
+ <div class="row">
+   
+   <div class="col-xs-4 col-sm-6">
+     <div class="ESTILOS1lineabajacampotexto">
+     <input class="form-control" type="password" name=confirmacion placeholder="Confirme la clave">
+   </div>
+     </div>
+     <div class="col-xs-4 col-sm-6">
+       <div class="ESTILOS1lineabajacampotexto">
+         <select class="form-control" name="departamento" placeholder>
+           <option disabled selected>Departamento</option>
+           <option>Risaralda</option>
+       </select>
+     </div>
+     </div>
+ </div>
+ <br>
+ <div class="row">
+    
+     <div class="col-xs-4 col-sm-6">
+       <div class="ESTILOS1lineabajacampotexto">
+       <select class="form-control" name="ciudad" placeholder>
+         <option disabled selected>Ciudad</option>
+         <option>Pereira</option>
+       </select>
+     </div>
+     </div>
+ </div>
+ <br>
+ <div class="row">
+     
+ </div>
 </div>
 
 
@@ -141,7 +123,7 @@
               <button type="button" class="ESTILOS1botones" name="cancelar"id="cancelar_comprador">CANCELAR</button>
               <script type="text/javascript">
             document.getElementById("cancelar_comprador").onclick = function () {
-            location.href = "?menu=inicio";
+            location.href = "inicio.php";
             };
             </script>
           </div>

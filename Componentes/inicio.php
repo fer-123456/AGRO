@@ -1,8 +1,3 @@
-<?php
-session_start();
-$usuario=$_SESSION['username'];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,6 +41,7 @@ $usuario=$_SESSION['username'];
                         <li class="nav-item">
                           <a class="nav-link" href="#">Ayuda</a>
                         </li>
+                        
                         <li class="nav-item">
                           <a class="nav-link" href="#">Ingresar</a>
                         </li>
@@ -59,8 +55,6 @@ $usuario=$_SESSION['username'];
                       <a href="contacto.html">Vender</a>
                       <a href="contacto.html">Ayuda</a>
                       <a href="contacto.html">Ingresar</a>
-                      <a href="" style="float:right;" ><?php echo "<h2>! hola $usuario ¡</h2>"; ?> </a><br><br>
-                      <a href="destroysesion.php" style="float:right;" >Cerrar sesion</a>
                       <button class="ESTILOS1botones2" role="link" href="index1.html">Crear</button>
           </div>
         </div>
@@ -95,7 +89,7 @@ $usuario=$_SESSION['username'];
           <button type="button" class="ESTILOS1botones2" name="vender" id="boton_Productor">VENDER</button>
 		  <script type="text/javascript">
             document.getElementById("boton_Productor").onclick = function () {
-            location.href = "?menu=P_Productor_saludo";
+            location.href = "P_Productor_saludo.php";
             };
          </script>
         </div>
@@ -105,7 +99,7 @@ $usuario=$_SESSION['username'];
           <button type="button" class="ESTILOS1botones2" name="transportar" id="boton_Transportador">TRANSPORTAR</button>
           <script type="text/javascript">
             document.getElementById("boton_Transportador").onclick = function () {
-            location.href = "?menu=T_Transportador_saludo";
+            location.href = "T_Transportador_saludo.php";
             };
          </script>
         </div>
@@ -115,7 +109,7 @@ $usuario=$_SESSION['username'];
           <button type="button" class="ESTILOS1botones2" name="comprar"id="boton_Comprador">COMPRAR</button>
           <script type="text/javascript">
             document.getElementById("boton_Comprador").onclick = function () {
-            location.href = "?menu=C_Comprador_saludo";
+            location.href = "C_Comprador_saludo.php";
             };
          </script>
         </div>
@@ -142,7 +136,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Aguacate</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -153,7 +147,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Tomate</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -164,7 +158,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Banano</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -188,7 +182,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Cebolla</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -199,7 +193,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Lulo</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
@@ -221,7 +215,7 @@ $usuario=$_SESSION['username'];
                     <label class="ESTILOS1centrado1"></label>
                     <label class="ESTILOS1centrado1">Frutas</label>
                     <label class="ESTILOS1centrado2">Apia</label>
-                    <label class="ESTILOS1centrado3">Naranja Valencia</label>
+                    <label class="ESTILOS1centrado3">Fresa</label>
                     <label class="ESTILOS1centrado4">1300 Kg</label>
               </div>
             </div>
