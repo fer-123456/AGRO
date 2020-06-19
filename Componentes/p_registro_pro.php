@@ -7,24 +7,63 @@ $con=conectar();
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];
 $numcelular=$_POST['numcelular'];
-$nombrefinca=$_POST['nombrefinca'];
 $cedula=$_POST['cedula'];
 $password=$_POST['password'];
+$conpassword=$_POST['conpassword'];
 $departamento=$_POST['departamento'];
 $ciudad=$_POST['ciudad'];
-$municipio=$_POST['municipio'];
+$nomfinca=$_POST['nomfinca'];
 $vereda=$_POST['vereda'];
 
-mysqli_query($con, "INSERT INTO p_usuarios(login,password) VALUES ('$nombre','$password')");
 
-mysqli_query($con, "INSERT INTO personas(nombres,apellidos,celular,nombre_finca,cedula,departamento,ciudad,municipio,vereda) VALUES ('$nombre','$apellido','$numcelular','$nombrefinca','$cedula','$departamento','$ciudad','$municipio','$vereda')");
+// Modificar el último carácter de un string
+$ultimo = $ciudad[strlen($ciudad)-1];
+echo $ultimo;
+
+$ultimo2 = $vereda[strlen($vereda)-1];
+echo $ultimo2;
 
 
 
-echo'<script type="text/javascript">
-                    alert("Dtos guardados correctamente");
-                    window.location.href="inicio.php";
+if (strcmp($password, $conpassword) === 0){
 
-                    </script>';
+    
+    mysqli_query($con, "INSERT INTO personas(nombres,apellidos,celular,cedula) VALUES ('$nombre','$apellido','$numcelular','$cedula')");
+    
+
+    $id_persona = "SELECT id_persona from personas where cedula='$cedula'";
+    $existe = mysqli_query( $con, $id_persona);
+    $filas=mysqli_num_rows($existe);
+
+    mysqli_query($con, "INSERT INTO p_usuarios(login,password,id_persona) VALUES ('$nombre','$password','$filas')");
+    
+
+
+
+    mysqli_query($con, "INSERT INTO productores(nombre_finca,id_ciudad,id_vereda,id_zona) VALUES ('$nomfinca','$ultimo','$ultimo2','1')");
+
+
+    echo'<script type="text/javascript">
+
+                        alert("Datos guardados correctamente");
+                        
+                        </script>';
+
+    
+}
+
+else{
+
+    echo'<script type="text/javascript">
+    alert("Las contraseñas  no son las mismas");
+    
+
+    </script>';
+
+
+   
+
+}
+
 
 ?>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AGRO-RISARALDA/Estilos/Estilos.css">
 
-    <title>Registro Productor </title>
+    <title>Registro Productor</title>
 
   </head>
   <body>
@@ -73,7 +73,7 @@
      </div>
      <div class="col-xs-4 col-sm-6">
        <div class="ESTILOS1lineabajacampotexto">
-       <input class="form-control" type="text" name="nombrefinca" placeholder="Nombre de la FInca">
+       <input class="form-control" type="text" name="cedula" placeholder="Numero de cedula">
      </div>
      </div>
   </div>
@@ -81,17 +81,20 @@
   <div class="row">
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control"  type="text" name="cedula" placeholder="Numero de cedula">
+      <input class="form-control"  type="password" name="password" placeholder="Contraseña">
     </div>
     </div>
     <div class="col-xs-4 col-sm-6">
       <div class="ESTILOS1lineabajacampotexto">
-      <input class="form-control" type="password" name="password" placeholder="Contraseña">
+      <input class="form-control" type="password" name="conpassword" placeholder="Cofirmar Contraseña">
+      
     </div>
       </div>
   </div>
   <br>
-  <div class="row">
+
+  
+<div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select  class="form-control" name="departamento">
@@ -123,10 +126,14 @@
          $ejecutar=mysqli_query( $con,$consulta );
 
 ?>
-<option >Selecion Ciudad</option>
+<option >Selecione Ciudad</option>
 <?php foreach ($ejecutar as $opciones):?>
    
-      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
+      <option value="<?php echo $opciones['ciudad']," -- " , $opciones['id_ciudad']?>"> <?php echo $opciones['ciudad'] , $opciones['id_ciudad'] ?></option>
+      
+      
+
+
          <?php endforeach ?>
 </select>
 
@@ -138,22 +145,12 @@
   <div class="row">
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
-        <select class="form-control" name="municipio" placeholder>
-       
-         <?php
-         $consulta="SELECT * FROM `p_ciudades`";
-         $ejecutar=mysqli_query( $con,$consulta );
+        <input class="form-control" type="text" name="nomfinca" placeholder="Nombre de la finca">
 
-?>
-<option >Selecion Municipio</option>
-<?php foreach ($ejecutar as $opciones):?>
-   
-      <option value="<?php echo $opciones['ciudad']  ?>"><?php echo $opciones['ciudad'] ?></option>
-         <?php endforeach ?>
-</select>
         </select>
       </div>
       </div>
+
       <div class="col-xs-4 col-sm-6">
         <div class="ESTILOS1lineabajacampotexto">
         <select class="form-control" name="vereda" placeholder>
@@ -167,7 +164,7 @@
 <option >Selecione Vereda</option>
 <?php foreach ($ejecutar as $opciones):?>
    
-      <option value="<?php echo $opciones['vereda']  ?>"><?php echo $opciones['vereda'] ?></option>
+      <option value="<?php echo $opciones['vereda'] ,  $opciones['id_vereda'] ?>"><?php echo $opciones['vereda'] , $opciones['id_vereda'] ?></option>
          <?php endforeach ?>
 </select>
           
