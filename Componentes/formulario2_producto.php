@@ -156,10 +156,10 @@
         
       </div>
       <div class="col-xs-3 col-sm-2">
-         <button type="submit" class="ESTILOS1botones" name="continuar"id="insertar">CONTINUAR</button>
+         <button type="submit" class="ESTILOS1botones" name="confirmar"id="confirmar">CONTINUAR</button>
          <script type="text/javascript">
-           document.getElementById("insertar").onclick = function () {
-           location.href = "?menu=formulario_producto";
+           document.getElementById("confirmar").onclick = function () {
+           location.href = "?menu=Confirmacion_producto";
            };
          </script>
       </div>
