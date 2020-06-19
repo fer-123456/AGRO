@@ -94,7 +94,7 @@
          <button type="button" class="ESTILOS1botones" name="cancelar"id="finalizar">FINALIZAR</button>
          <script type="text/javascript">
            document.getElementById("finalizar").onclick = function () {
-           location.href = "?menu=inicio";
+           location.href = "inicio.php";
            };
          </script>
         
@@ -103,7 +103,7 @@
          <button type="submit" class="ESTILOS1botones" name="venproducto"id="venproducto">Vender otro </button>
          <script type="text/javascript">
            document.getElementById("venproducto").onclick = function () {
-           location.href = "?menu=regproducto";
+           location.href = "regproducto.php";
            };
          </script>
       </div>
